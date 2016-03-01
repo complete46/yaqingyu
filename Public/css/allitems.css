@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+#allitems{
+	height: 3000px;
+	margin: 0 auto;
+	width: 100%;
+	min-width: 1000px;
+}
+
+#items{
+	width: 100%;
+	min-width: 1000px;
+	text-align:center;
+}
+
+.item{
+	margin: 10px 20px 20px 20px;
+	display:inline-block;
+	
+}
+
+.item_image{
+	display:table-cell;    
+	vertical-align:middle; 
+	border: 1px solid #eee;
+	width:200px;
+	height:200px;
+}
+
+.item_des{
+	border: 1px solid #eee;
+	width:200px;
+	height:70px;
+	padding-top:10px;
+}
+
+.item_des a{
+	color:#000;
+}
+

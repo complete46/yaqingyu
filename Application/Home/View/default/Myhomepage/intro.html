@@ -1,0 +1,30 @@
+<section class="Hui-container">	
+	<div id="myhomepage">		
+		<h2>{$title}</h2>
+		<div class="line"></div>
+		<br>
+		<br>
+		<h5>{$no_reserve}</h5>
+ 		<if condition="$title eq '我的预约'">
+	 		<volist name="data" id="arr">
+				<div id="reservelist">								
+						已预约投资额{$arr.amount}万元人民|投资开放时间：2016年7月15日					
+				</div>
+				<input class="btn btn-primary radius disabled" type="button" value="预约审核中">
+				<br>
+			</volist>
+		<elseif condition="$title eq '我的申请'"/>
+			<volist name="data" id="arr">
+				<div id="reservelist">								
+						已预约贷款{$arr.loan}元人民 | {$arr.u_name}			
+				
+				<input class="btn btn-primary radius disabled" type="button" value="申请审核中">
+				</div>
+				<br>
+			</volist>	
+		</else>
+		<else/>
+			连接失败												
+		</if>				
+	</div>
+</section>

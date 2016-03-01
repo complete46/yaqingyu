@@ -1,0 +1,31 @@
+<extend name="Public/base" />
+
+<block name="title">{$msgTitle}|Brilliance Finance</block>
+
+<block name="main">
+
+	<h5>
+		{$data}
+	</h5>
+
+	<p class="jump">
+		<a id="href" href="{$jumpUrl}">跳转回{$pagename}</a> <b id="wait">{$waitSecond}</b>
+	</p>
+	
+	<script type="text/javascript">
+	(function(){
+		var wait = document.getElementById('wait'),href = document.getElementById('href').href;
+		var interval = setInterval(function(){
+			var time = --wait.innerHTML;
+			if(time <= 0) {
+				location.href = href;
+				clearInterval(interval);
+			};
+		}, 1000);
+	})();
+	</script>
+
+</block>
+
+
+

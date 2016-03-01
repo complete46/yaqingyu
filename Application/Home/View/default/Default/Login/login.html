@@ -1,0 +1,52 @@
+<section class="Hui-container">		
+	<div id="login">		
+		<h2>登录</h2>
+		<div class="line"></div>
+		<br>
+		<br>
+		<form id="login_form" method="post" action="{:U('Login/login')}" class="form form-horizontal responsive">
+			<div class="row cl">
+				<label class="form-label col-xs-2">邮箱：</label>
+				<div class="formControls col-xs-5">
+					<input type="text" class="input-text" placeholder="@" name="email" id="email" datatype="e" nullmsg="请输入邮箱！">
+				</div>
+				<div class="col-xs-5"> </div>
+			</div>	
+			<br>
+			
+			<div class="row cl">
+				<label class="form-label col-xs-2">密码：</label>
+				<div class="formControls col-xs-5">
+					<input type="password" class="input-text" autocomplete="off" placeholder="密码" name="password" id="password" datatype="*" nullmsg="请输入密码！" >
+				</div>
+				<div class="col-xs-5"> </div>
+			</div>
+			<br>
+		
+			<div class="row cl">
+				<div class="col-xs-10 col-xs-offset-2">
+					<input class="btn btn-primary" type="submit" value="&nbsp;&nbsp;登录&nbsp;&nbsp;">
+				</div>
+			</div>		
+		</form>
+		<br>
+		<br>
+		<br>
+		<div id="not_registered">
+			<h4>尚未注册？</h4>  <a href="{:U('Iregister/index')}">投资者</a> <a href="{:U('Sregister/index')}">学生</a> 				
+		</div>
+	</div>
+</section>
+
+<script>
+$(function(){
+	$('.skin-minimal input').iCheck({
+		checkboxClass: 'icheckbox-blue',
+		radioClass: 'iradio-blue',
+		increaseArea: '20%'
+	});
+	$("#login_form").Validform({
+		tiptype:2
+	});
+});
+</script>

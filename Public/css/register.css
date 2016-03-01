@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+#register {
+	height: 600px;
+	margin: 0 auto;
+	width: 100%;
+	min-width: 1000px;
+}
+
+#register_form{
+	margin: 30px 30px 30px 60px;
+}
+.box{
+	font-size:12px;
+	width:300px;
+	height:40px;
+	margin:20px 20px 10px 0px;
+	border:3px solid #4a4266; 
+	padding:0px 0px 0px 20px;
+	border-radius:5px;
+}
+
+#register_submit{
+	margin:40px 0px 0px 255px;
+	width:90px;
+	height:40px;
+	background-color:#4a4266;
+	color:#FFFFFF; 
+	border: 0px solid #4a4266; 
+	cursor:pointer;
+	font-family:黑体;
+	font-size:20px;
+	border-radius:5px;
+}
+
+.instead{
+	margin:50px 0px 0px 0px;
+	color:#666666;
+}
+
+#register h4{
+	display:inline-block;
+	font-size:20px;
+	color:#4a4266;
+	padding:0px 0px 10px 0px;
+	font-family:"黑体";
+	width:100px;
+}
+
+#register ul{
+	display:inline-block;
+}

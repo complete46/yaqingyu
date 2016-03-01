@@ -1,0 +1,45 @@
+<section class="Hui-container">	
+	<div id="ireserve">		
+		<h2>预约投资</h2>
+		<div class="line"></div>
+		<br>
+		<br>
+		<p>新一期投资项目的年回报率为固定收益5.5%。</p>
+		<p>本次投资将于2016年8月15日正式启动，届</p>
+		<p>时我们会将详细的投资条款和投资信息发送至</p>
+		<p>您的邮箱，进一步确认您投资额，完成投资。</p>
+		<br>
+		<br>		
+		<form method="post" action="" id="ireserve_form" class="form form-horizontal responsive">		
+			<div class="row cl">
+				<label class="form-label col-xs-2">预约投资额(万人民币)</label>
+				<div class="formControls col-xs-5">
+					<input type="text" class="input-text" placeholder="人民币(万)" name="amount" id="amount" datatype="amount" nullmsg="请输入金额">		
+				</div>				
+				<div class="col-xs-5"> </div>
+			</div>
+			<div class="row cl">
+				<div class="col-xs-10 col-xs-offset-2">
+					<input class="btn btn-primary" type="submit" value="&nbsp;&nbsp;预约&nbsp;&nbsp;">
+				</div>
+			</div>
+		</form>
+		<br>
+		<br>		
+	</div>
+</section>
+
+<script>
+$(function(){
+	$('.skin-minimal input').iCheck({
+		checkboxClass: 'icheckbox-blue',
+		radioClass: 'iradio-blue',
+		increaseArea: '20%'
+	});
+	$("#ireserve_form").Validform({
+		tiptype:2
+	});
+});
+</script>
+
+

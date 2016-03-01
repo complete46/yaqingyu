@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+#makeawish{
+	height: 700px;
+	margin: 0 auto;
+	width: 100%;
+	min-width: 1000px;
+}
+
+#makeawish_form{
+	margin: 30px 30px 30px 60px;
+}
+
+#makeawish h4{
+	display:inline-block;
+	font-size:20px;
+	color:#4a4266;
+	font-family:"黑体";
+	width:100px;
+	vertical-align:baseline;
+}
+
+#des_text, #title_text{
+	display:inline-block;
+	margin:20px 10px 0px 0px;
+	padding:5px 5px 5px 10px;
+	border: 3px solid #4a4266; 
+	font-family:黑体;
+	font-size:20px;
+	color:#4a4266;	
+	border-radius:5px;
+}
+
+#des_tag{
+	position:relative;
+	top:-50px;
+}
+
+#wish_source{	
+	width:275px;
+	height:30px;
+	background-color:#FFFFFF;
+	color:#4a4266; 
+	border: 3px solid #4a4266; 
+	padding-left: 5px;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+} 
+
+#wish_file{
+	display:inline-block;
+	position:relative; 
+	right:395px; 
+	height:35px; 	
+	filter:alpha(opacity:0);
+	opacity:0;
+	width:385px;
+	cursor:pointer;
+}
+
+#makeawish #choose_file{
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+	position:relative;
+	left:-5px;
+	top:1px;
+	display:inline-block;
+	height:38px; 
+	background-color:#4a4266;
+	color:#FFFFFF; 
+	border: 1px solid #4a4266; 
+	font-family:黑体;
+	font-size:19px;
+	width:100px;
+}
+
+#makeawish_submit{
+	margin:30px 20px 0px 375px;
+	width:120px;
+	height:40px;
+	background-color:#4a4266;
+	color:#FFFFFF; 
+	border: 0px solid #4a4266; 
+	cursor:pointer;
+	font-family:黑体;
+	font-size:20px;
+	border-radius:5px;
+}
+
+.reset{
+	margin:50px 0px 0px 0px;
+	color:#666666;
+}

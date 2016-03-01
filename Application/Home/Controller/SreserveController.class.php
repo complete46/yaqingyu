@@ -1,0 +1,60 @@
+<?php
+//check1
+namespace Home\Controller;
+use Think\Controller;
+use Think\Model;
+use Home\Model\User;
+
+class SreserveController extends Controller {
+    public function index(){
+    	if(session('?user')){
+    		if(session('identity')=="student"){
+    			$this->assign('user',I('session.user'));
+    			$this->display();
+    		}
+    		else{
+    			session(null);
+    			redirect(U('Iregister/index'));
+    		}
+    	}
+    	else{
+    		redirect(U('Login/index'));
+    	}
+    }
+    
+    public function reserve(){
+    if(IS_POST){
+	    	$user = D('Sreserve');
+	    	$data['university'] = I('post.college');
+	    	$data['department'] = I('post.department');
+	    	$data['enrollment_year'] = I('post.start_year');
+	    	$data['major'] = I('post.major');
+	    	$data['passport'] = I('post.passport');
+	    	$data['idcard'] = I('post.idcard');
+	    	$data['loan'] = I('post.loan');
+	    	$data['email']=session('user');
+	    	if ($data1=$user->create($data)){
+	    		if($user->add($data1))
+	    			redirect(U('Myhomepage/index'));
+	    		else{
+	    			$error=$user->getError();
+	    			$this->assign('message','预约失败');
+	    			$this->assign('title1','预约失败');
+	    			$this->assign('pagename','预约页面');
+	    			$this->assign('data',$error);
+	    			$this->error('预约失败！','index',3);		
+	    		}
+	    	}
+	    	else{
+	    		$error=$user->getError(); 
+	    		$this->assign('message','预约失败');
+	    		$this->assign('title1','预约失败');
+	    		$this->assign('pagename','预约页面');
+	    		$this->assign('data',$error);
+	    		$this->error('预约失败！', 'index',3);		
+	    	} 
+    	}
+    	else
+    		$this->display('index');  		    	
+    }
+}

@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+#search{
+	height:145px;
+	margin: 0 auto;
+	width: 100%;
+	min-width: 1000px;
+}
+
+#EnglishName {
+	font-size:14px;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: bold;	
+}
+
+#ChineseName{
+	font-family: "幼圆";
+	font-size: 45px;
+	font-weight:bold;
+	
+}
+
+#search .left{
+	margin:30px 0 30px 30px;
+	float:left;
+}
+
+#search .middle{
+	margin:40px 0 30px 80px;
+	float:left;
+}
+
+#search .right{
+	margin:50px 60px 30px 0;
+	float:right;
+}
+
+.search{
+font-size:12px;
+width:510px;
+height:40px;
+margin:0;
+border:3px solid #4a4266; 
+padding:0 0 0 30px;
+border-radius:5px;
+z-index:-1;
+
+} 
+
+#search .button{
+position:relative;
+left:-100px;
+top:3px;
+border-top-right-radius:5px;
+border-bottom-right-radius:5px;
+font-size:25px;
+width:100px;
+height:45px;
+background-color:#4a4266;
+color:#FFF; 
+border: 0px solid #4a4266; 
+cursor:pointer;
+font-family:黑体;
+z-index:0;
+}
+
+#search a{
+color:#4a4266;
+}
+
+#search .right a{
+font-size:25px;
+color:#4a4266; 
+font-family:黑体;
+}

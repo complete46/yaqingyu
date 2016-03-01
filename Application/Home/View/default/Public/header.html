@@ -1,0 +1,22 @@
+<header class="header">
+	<nav class="mainnav Hui-wraper">	
+		<ul class="cl">		
+			<a href="{:U('Index/index')}"> <img src="__PUBLIC__/Images/logo.png"/> </a>					
+			<li ><a href="{:U('Index/index')}">首页</a></li>		
+			<li><a href="{:U('Investor/index')}">投资</a></li>
+			<li><a href="{:U('Student/index')}">贷款</a></li>
+			
+		<!--  	<li><a href="#">关于我们</a></li>
+		 		<li><a href="#">常见问题</a></li>   -->
+		 		
+			<present name="user">
+					<li><a href="{:U('Myhomepage/index')}">个人资料</a></li>	
+					<li><a href="{:U('Logout/index')}">登出</a></li>									
+			<else />
+					<li><a href="{:U('Login/index')}">登录</a></li>					
+			</present>					
+		</ul>
+	</nav>
+</header>
+
+

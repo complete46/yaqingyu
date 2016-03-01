@@ -1,0 +1,33 @@
+<div id="collections">	
+ 	<div class="center">	
+		<div id="favs">
+ 			<if condition="$status eq '0'">
+	 			<volist name="data" id="arr" mod="4">
+			        <div CLASS="fav">
+			        	<div CLASS="fav_image">		        			    	
+			      			<a href="{:U('Item/index?wish_id='.$arr['id'])}"> <img src="{$arr.wish_id}" width="{$arr.w}" height="{$arr.h}"/> </a>
+			        	</div>					
+						<div CLASS="fav_title"> 
+							<a href="{:U('Item/index?wish_id='.$arr['id'])}"> {$arr.title} </a>
+						</div>
+					</div>
+					<eq name="mod" value="3">
+						<br>
+					</eq>
+				</volist>
+			<elseif condition="$status eq '1'"/>
+				没有任何收藏
+			</else>	
+			<else/>
+				连接失败												
+			</if>				
+		</div>
+		<div class="pages">
+			<div id="page_box">
+				{$page}
+			</div>
+		</div> 			
+	</div>		
+</div>	
+
+

@@ -1,0 +1,29 @@
+<div id="makeawish">
+	<form method="post" action="__CONTROLLER__/upload" id="makeawish_form" name="makeawish_form" enctype="multipart/form-data">
+		<ul>
+			<li>
+				<h4 class="wish_tags">简述</h4>				
+				<textarea cols="35" rows="1" id="title_text" name="title_text"></textarea>
+				<span id="checkbox"></span>
+			</li>
+			<li>
+				<h4 class="wish_tags" id="des_tag">详细描述</h4>				
+				<textarea cols="35" rows="5" id="des_text" name="des_text"></textarea>
+			</li>
+			<li>
+				<h4 class="wish_tags">图片</h4>				
+				<input type="text" id="wish_source" name="wish_source"/>
+				<input type="button" id="choose_file" value="选择文件"/>
+				<input type="file"  id="wish_file" name="wish_file" onchange="document.getElementById('wish_source').value=this.value"/>
+			</li>
+			<li>
+							
+				<input type="submit" id="makeawish_submit" name="makeawish_submit" value="发布新愿望">
+				<a href="{:U('Makeawish/index')}" class="reset">重置</a>
+			</li>
+		</ul>
+	</form>
+</div>
+			
+				
+			

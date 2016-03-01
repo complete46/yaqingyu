@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+#mywishes{
+	height: 3000px;
+	margin: 0 auto;
+	width: 100%;
+	min-width: 1000px;
+}
+
+#wishes{
+	width: 100%;
+	min-width: 1000px;
+	text-align:center;
+}
+
+.wish{
+	margin: 10px 20px 20px 20px;
+	display:inline-block;
+	
+}
+
+.wish_image{
+	display:table-cell;    
+	vertical-align:middle; 
+	border: 1px solid #eee;
+	width:200px;
+	height:200px;
+}
+
+.wish_title{
+	border: 1px solid #eee;
+	width:200px;
+	height:70px;
+	padding-top:10px;
+}
+
+.wish_title a{
+	color:#000;
+}
+
